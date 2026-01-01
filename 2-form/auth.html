@@ -4,24 +4,27 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Регистрация</title>
+
+		<link rel="stylesheet" href="./styles/style.css" />
 	</head>
 	<body>
 		<main>
-			<section>
-				<div>
-					<h1>Регистрация</h1>
+			<section class="auth-section">
+				<div class="auth-section__body">
 					<div>
-						<span>Уже есть аккаунт?</span>
-						<span>
-							<a href="#">Войти</a>
-						</span>
+						<h1 class="auth-section__body-title">Регистрация</h1>
+						<div class="auth-section__body-alreadyHaveAcc alreadyHaveAcc">
+							<span class="alreadyHaveAcc__quetion">Уже есть аккаунт?</span>
+							<span class="alreadyHaveAcc__login">
+								<a class="alreadyHaveAcc__login-link" href="#">Войти</a>
+							</span>
+						</div>
 					</div>
-				</div>
 
-				<div>
-					<form action="/auth" method="post">
+					<form class="auth-section__form form" action="/auth" method="post">
 						<div>
 							<input
+								class="form-usernameInput"
 								type="text"
 								name="username"
 								id="username"
@@ -31,6 +34,7 @@
 						</div>
 						<div>
 							<input
+								class="form-nameInput"
 								type="text"
 								name="name"
 								id="name"
@@ -38,6 +42,7 @@
 								required
 							/>
 							<input
+								class="form-surnameInput"
 								type="text"
 								name="lastname"
 								id="lastname"
@@ -47,6 +52,7 @@
 						</div>
 						<div>
 							<input
+								class="form-emailInput"
 								type="email"
 								name="email"
 								id="email"
@@ -56,13 +62,24 @@
 						</div>
 
 						<div>
-							<button type="submit">Зарегистрироваться</button>
+							<button class="form-btnAuth" type="submit">
+								Зарегистрироваться
+								<img src="./assets/icons/Signup button.svg" alt="Стрелка вперед" />
+							</button>
 						</div>
 
-						<div>
-							<input type="checkbox" name="agree" id="agree" required />
-							<label for="agree">Я прочитал и принимаю</label>
-							<span><a href="#">Условия использования</a></span>
+						<div class="form-terms">
+							<input
+								class="form-terms__checkbox"
+								type="checkbox"
+								name="agree"
+								id="agree"
+								required
+							/>
+							<label class="form-terms__label" for="agree"
+								>Я прочитал и принимаю</label
+							>
+							<a class="form-terms__link" href="#">Условия использования</a>
 						</div>
 					</form>
 				</div>
