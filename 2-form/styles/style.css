@@ -1,0 +1,64 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.auth-section {
+	background: linear-gradient(
+		225deg,
+		#ffa5a5 33.09%,
+		rgba(255, 255, 255, 0) 82.34%,
+		#fdc5c5 100%
+	);
+}
+
+.auth-section__body {
+	background-color: #fffefe;
+}
+
+.auth-section__body-title {
+	font-weight: 700;
+	font-size: 36px;
+	color: #333;
+}
+
+.alreadyHaveAcc__question {
+	font-weight: 400;
+	font-size: 18px;
+	color: #666;
+}
+
+.alreadyHaveAcc__login {
+	font-weight: 400;
+	font-size: 18px;
+	color: #089fe0;
+}
+
+.form-usernameInput,
+.form-nameInput,
+.form-surnameInput,
+.form-emailInput {
+	background-color: #f5f5f5;
+	font-weight: 600;
+	font-size: 16px;
+	color: #333;
+}
+
+.form-btnAuth {
+	background-color: #089fe0;
+	font-weight: 400;
+	font-size: 18px;
+	color: #fff;
+}
+
+.form-terms {
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.form-terms__label {
+	color: #666;
+}
+
+.form-terms__link {
+	color: #089fe0;
+}
