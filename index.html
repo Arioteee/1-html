@@ -3,63 +3,83 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 		<title>Теория цвета</title>
+
+		<link rel="stylesheet" href="./styles/main.css" />
 	</head>
 	<body>
-		<header>
-			<div>
-				<div>
-					<img src="assets/images/logotype.png" alt="Логотип сайта" /><span
-						>Мой блог</span
-					>
+		<header class="header">
+			<div class="header__body">
+				<div class="header__body_logo-img">
+					<img src="assets/images/logotype.png" alt="Логотип сайта" />
+					<span class="header__logo-span">Мой блог</span>
 				</div>
-				<div>
-					<nav>
-						<ul>
+				<div class="header__body_navigation navigation">
+					<nav class="navigation__body">
+						<ul class="navigation__body-list">
 							<li><a href="#">HTML и CSS</a></li>
 							<li><a href="#">Frontend</a></li>
 							<li><a href="#">Backend</a></li>
 						</ul>
 					</nav>
 				</div>
-				<div>
-					<div>
-						<form action="search">
-							<button aria-label="Кнопка поиска" type="submit">
-								<img src="assets/images/searchIcon.png" alt="Кнопка поиска" />
+				<div class="header__body-search search">
+					<div class="search__body">
+						<form class="search__body-form" action="search">
+							<button
+								class="search__body-form_btn"
+								aria-label="Кнопка поиска"
+								type="submit"
+							>
+								<img src="assets/icons/search.svg" alt="Кнопка поиска" />
 							</button>
-							<input placeholder="Поиск" type="text" />
+							<input
+								class="search__body-form_input"
+								placeholder="Поиск"
+								type="text"
+							/>
 						</form>
 					</div>
 				</div>
 
-				<div>
-					<a href="./2-form/auth.html">Регистрация</a>
-				</div>
+				<!-- <div class="header__body-auth">
+					<a class="header__body-auth_link" href="./2-form/auth.html">Регистрация</a>
+				</div> -->
 			</div>
 		</header>
 
-		<main>
-			<section>
-				<div>
-					<div>
-						<span>FRONTEND</span>
-						<span><time datetime="2024-05-12">">12 мая 2024</time></span>
+		<main class="main">
+			<section class="main__heroSect">
+				<div class="main__heroSect-body">
+					<div class="main__heroSect-body_postInfo postInfo">
+						<span class="postInfo-theme">FRONTEND</span>
+						<span class="postInfo-dnt"
+							><time datetime="2024-05-12">12 мая 2024</time></span
+						>
 					</div>
-					<h1>Теория цвета - Как цвет влияет на поведение потребителей</h1>
-					<div>
-						<div><img src="assets/images/authorAvatar.png" alt="Аватар автора" /></div>
-						<div>
-							<span>Наталья Васильева</span>
-							<a>Разработчик</a>
+					<h1 class="main__heroSect-body_title">
+						Теория цвета - Как цвет влияет на поведение потребителей
+					</h1>
+					<div class="main__heroSect-body_author author">
+						<div class="author_ava">
+							<img
+								class="author_ava-img"
+								src="assets/images/authorAvatar.png"
+								alt="Аватар автора"
+							/>
+						</div>
+						<div class="author">
+							<span class="author-name">Наталья Васильева</span>
+							<span class="author-position">Разработчик</span>
 						</div>
 					</div>
 
-					<div>
+					<div class="main__heroSect-body_heroImg">
 						<img src="assets/images/hero-image.png" alt="Главное изображение цвета" />
 					</div>
 
-					<div>
+					<div class="main__heroSect-body_description">
 						<p>
 							Теория цвета — это особенности эмоционального восприятия человеком тех
 							или иных цветовых решений. Цвета и различные их комбинации влияют на
@@ -89,6 +109,10 @@
 			</section>
 		</main>
 
-		<footer><div>Все права защищены (c) 2024</div></footer>
+		<footer class="footer">
+			<div class="footer__body">
+				<span class="footer__body-rights">Все права защищены &copy; 2024</span>
+			</div>
+		</footer>
 	</body>
 </html>

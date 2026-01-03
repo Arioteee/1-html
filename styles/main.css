@@ -1,0 +1,69 @@
+body {
+	background: linear-gradient(180deg, #374151 0%, #111827 100%);
+	font-family: Roboto, sans-serif;
+}
+
+.header__logo-span {
+	font-weight: 400;
+	font-size: 18px;
+	color: #fff;
+}
+
+.navigation__body-list > li > a {
+	font-weight: 400;
+	font-size: 16px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.search__body-form_btn {
+	background: rgba(31, 41, 55, 0.6);
+}
+
+.search__body-form_input {
+	background: rgba(31, 41, 55, 0.6);
+	color: #fff;
+}
+
+.postInfo > span {
+	font-weight: 400;
+	font-size: 14px;
+	color: #fff;
+	opacity: 0.6;
+}
+
+.main__heroSect-body_title {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 158%;
+	color: #fff;
+}
+
+.author-name {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 175%;
+	color: #fff;
+}
+.author-position {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 200%;
+	color: #fff;
+	opacity: 0.6;
+}
+
+.main__heroSect-body_description > p {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 160%;
+	color: #fff;
+}
+
+.footer__body-rights {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 175%;
+	color: #fff;
+	opacity: 0.6;
+}
