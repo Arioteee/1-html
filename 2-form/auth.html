@@ -1,40 +1,39 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 		<title>Регистрация</title>
 
 		<link rel="stylesheet" href="./styles/style.css" />
 	</head>
 	<body>
-		<main>
-			<section class="auth-section">
-				<div class="auth-section__body">
-					<div>
-						<h1 class="auth-section__body-title">Регистрация</h1>
-						<div class="auth-section__body-alreadyHaveAcc alreadyHaveAcc">
-							<span class="alreadyHaveAcc__quetion">Уже есть аккаунт?</span>
-							<span class="alreadyHaveAcc__login">
-								<a class="alreadyHaveAcc__login-link" href="#">Войти</a>
-							</span>
+		<main class="main">
+			<section class="authSection">
+				<div class="authSection__body">
+					<div class="authSection__body-text">
+						<h1 class="authSection__body-text_title">Регистрация</h1>
+						<div class="authSection__body-text_alrHaveAcc alrHaveAcc">
+							<span class="alrHaveAcc-question">Уже есть аккаунт?</span>
+							<a href="#" class="alrHaveAcc-login">Войти</a>
 						</div>
 					</div>
 
-					<form class="auth-section__form form" action="/auth" method="post">
-						<div>
+					<form action="/auth" method="post" class="authSection__body-form form">
+						<div class="form_myCompany">
 							<input
-								class="form-usernameInput"
+								class="form_myCompany-input"
 								type="text"
-								name="username"
-								id="username"
-								placeholder="Введите юзернейм"
+								name="myCompany"
+								id="myCompany"
+								placeholder="Введите вашу компанию"
 								required
 							/>
 						</div>
-						<div>
+						<div class="form_trueName">
 							<input
-								class="form-nameInput"
+								class="form_trueName-inputName"
 								type="text"
 								name="name"
 								id="name"
@@ -42,7 +41,7 @@
 								required
 							/>
 							<input
-								class="form-surnameInput"
+								class="form_trueName-inputLastName"
 								type="text"
 								name="lastname"
 								id="lastname"
@@ -50,9 +49,9 @@
 								required
 							/>
 						</div>
-						<div>
+						<div class="form_email">
 							<input
-								class="form-emailInput"
+								class="form_email-input"
 								type="email"
 								name="email"
 								id="email"
@@ -61,27 +60,27 @@
 							/>
 						</div>
 
-						<div>
-							<button class="form-btnAuth" type="submit">
+						<div class="form_btn">
+							<button class="form_btn-auth" type="submit">
 								Зарегистрироваться
 								<img src="./assets/icons/Signup button.svg" alt="Стрелка вперед" />
 							</button>
 						</div>
-
-						<div class="form-terms">
-							<input
-								class="form-terms__checkbox"
-								type="checkbox"
-								name="agree"
-								id="agree"
-								required
-							/>
-							<label class="form-terms__label" for="agree"
-								>Я прочитал и принимаю</label
-							>
-							<a class="form-terms__link" href="#">Условия использования</a>
-						</div>
 					</form>
+
+					<div class="authSection__body-terms">
+						<input
+							class="authSection__body-terms_checkbox"
+							type="checkbox"
+							name="agree"
+							id="agree"
+							required
+						/>
+						<label class="authSection__body-terms_label" for="agree">
+							Я прочитал и принимаю
+						</label>
+						<a class="authSection__body-terms_link" href="#">Условия использования</a>
+					</div>
 				</div>
 			</section>
 		</main>
