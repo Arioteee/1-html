@@ -1,8 +1,18 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
 }
 
-.auth-section {
+.main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
 	background: linear-gradient(
 		225deg,
 		#ffa5a5 33.09%,
@@ -11,54 +21,97 @@ body {
 	);
 }
 
-.auth-section__body {
-	background-color: #fffefe;
+.authSection {
+	padding: 72px 94px 91px;
+	border-radius: 10px;
+	background: #fffefe;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.auth-section__body-title {
+.authSection__body {
+}
+
+.authSection__body-text {
+}
+
+.authSection__body-text_title {
 	font-weight: 700;
 	font-size: 36px;
 	color: #333;
 }
 
-.alreadyHaveAcc__question {
+.alrHaveAcc {
+}
+
+.alrHaveAcc-question {
 	font-weight: 400;
 	font-size: 18px;
 	color: #666;
 }
 
-.alreadyHaveAcc__login {
+.alrHaveAcc-login {
 	font-weight: 400;
 	font-size: 18px;
 	color: #089fe0;
 }
 
-.form-usernameInput,
-.form-nameInput,
-.form-surnameInput,
-.form-emailInput {
+.authSection__body-form {
+}
+.form {
+}
+.form_myCompany {
+}
+
+.form_myCompany-input,
+.form_trueName-inputName,
+.form_trueName-inputLastName,
+.form_email-input {
+	padding: 9px 0 9px 11px;
+	border: none;
 	background-color: #f5f5f5;
 	font-weight: 600;
 	font-size: 16px;
 	color: #333;
 }
 
-.form-btnAuth {
+/* top | right | bottom | left */
+
+.form_myCompany-input::placeholder,
+.form_trueName-inputName::placeholder,
+.form_trueName-inputLastName::placeholder,
+.form_email-input::placeholder {
+	background-color: #f5f5f5;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 16px;
+	color: #999;
+	border: none;
+}
+
+.form_trueName {
+}
+.form_btn {
+}
+.form_btn-auth {
+	border-radius: 5px;
+	border: none;
 	background-color: #089fe0;
 	font-weight: 400;
 	font-size: 18px;
 	color: #fff;
 }
-
-.form-terms {
+.authSection__body-terms {
 	font-weight: 400;
 	font-size: 14px;
 }
 
-.form-terms__label {
+.authSection__body-terms_checkbox {
+}
+
+.authSection__body-terms_label {
 	color: #666;
 }
 
-.form-terms__link {
+.authSection__body-terms_link {
 	color: #089fe0;
 }
