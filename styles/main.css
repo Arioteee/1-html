@@ -12,11 +12,30 @@ body {
 .container {
 	width: 1080px;
 	margin: 0 auto;
+	padding: 0 15px;
 	overflow: hidden;
 }
 
+/* Header */
+
 .header {
 	padding-top: 72px;
+}
+
+.header__body {
+	display: flex;
+	align-items: center;
+	gap: 77px;
+}
+
+.header__body_logo-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header__body_logo-img img {
+	box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.15);
 }
 
 .header__logo-span {
@@ -26,16 +45,17 @@ body {
 	color: #fff;
 }
 
+/* header Navigation */
+
 .navigation {
-	margin: 0 77px 0 346px;
+	flex: 1;
 }
 
 .navigation__body-list {
+	display: flex;
+	align-items: center;
+	gap: 39px;
 	list-style: none;
-}
-
-.navigation__body-list > li:not(:last-child) {
-	margin-right: 39px;
 }
 
 .navigation__body-list > li > a {
@@ -45,21 +65,51 @@ body {
 	text-decoration: none;
 }
 
+/* Header Form */
+
+.search__body-form {
+	display: flex;
+}
+
 .search__body-form_btn {
 	background: rgba(31, 41, 55, 0.6);
 	border: none;
-	padding: 13px 18px 13px 17px;
+	height: 40px;
+	padding: 0 17px;
+	cursor: pointer;
+
+	/* top-left | top-right | bottom-right | bottom-left */
+	border-radius: 100px 0 0 100px;
 }
 
 .search__body-form_input {
 	background: rgba(31, 41, 55, 0.6);
+	font-size: 16px;
 	color: #fff;
 	border: none;
-	padding: 11px 0 10px 0;
+	height: 40px;
+	padding: 0 5px;
+	outline: none;
+
+	/* top-left | top-right | bottom-right | bottom-left */
+	border-radius: 0 100px 100px 0;
 }
+
+.search__body-form_input::placeholder {
+	opacity: 0.6;
+}
+
+/* Main */
 
 .main {
 	padding-top: 69px;
+}
+
+.main__heroSect-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .postInfo > span {
@@ -76,13 +126,21 @@ body {
 .main__heroSect-body_title {
 	width: 525px;
 	margin: 14px 0 30px;
+	text-align: center;
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 158%;
 	color: #fff;
 }
 
+.author {
+	display: flex;
+	align-items: center;
+}
+
 .author_text {
+	display: flex;
+	flex-direction: column;
 	margin-left: 16px;
 }
 
@@ -106,6 +164,10 @@ body {
 	margin-bottom: 69px;
 }
 
+.main__heroSect-body_description {
+	max-width: 708px;
+}
+
 .main__heroSect-body_description > p {
 	font-weight: 400;
 	font-size: 20px;
@@ -117,9 +179,15 @@ body {
 	margin-bottom: 30px;
 }
 
+/* Footer */
+
 .footer {
 	padding-top: 103px;
 	padding-bottom: 77px;
+}
+
+.footer__body {
+	text-align: center;
 }
 
 .footer__body-rights {
