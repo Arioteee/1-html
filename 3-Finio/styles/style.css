@@ -1,0 +1,210 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-size: 17px;
+	font-style: normal;
+	color: #000;
+}
+
+.main {
+}
+
+.tariff {
+	padding: 80px 0;
+}
+
+.container {
+	max-width: 1392px;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0 24px;
+}
+
+.tariff__body {
+}
+
+.tariff__body_title {
+	text-align: center;
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 120%;
+}
+
+.tariff__body_subtitle {
+	margin-top: 24px;
+	margin-bottom: 40px;
+	font-weight: 500;
+	line-height: 140%;
+	text-align: center;
+	color: rgba(78, 93, 124, 0.5);
+}
+
+.tariff__cards {
+	display: grid;
+	gap: 24px;
+	grid-template-columns: repeat(3, minmax(328px, 369px));
+	justify-content: center;
+
+	margin-bottom: 40px;
+}
+
+.tariff__cards_item {
+	display: grid;
+	justify-content: space-between;
+	align-items: end;
+	grid-template-areas:
+		'benefit'
+		'title'
+		'description'
+		'price'
+		'button';
+	grid-template-rows: auto auto auto auto;
+	padding: 48px 40px;
+	border-radius: 8px;
+	box-shadow: 0 0 32px 0 rgba(78, 93, 124, 0.16);
+}
+
+.tariff__cards_item_benefit {
+	grid-area: benefit;
+	margin-bottom: 16px;
+	max-width: 125px;
+	border-radius: 8px;
+	padding: 4px 16px;
+	background-color: #1abc9c;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 140%;
+	color: #fff;
+	align-self: end;
+}
+
+.tariff__cards_item_title {
+	margin-bottom: 16px;
+	grid-area: title;
+	font-weight: 800;
+	font-size: 32px;
+	line-height: 120%;
+}
+
+.tariff__cards_item_description {
+	margin-bottom: 50px;
+	grid-area: description;
+	font-weight: 500;
+	line-height: 140%;
+	color: rgba(78, 93, 124, 0.5);
+}
+
+.item__price {
+	margin-bottom: 40px;
+	grid-area: price;
+	display: grid;
+	grid-template-columns: 160px 1fr;
+	align-items: center;
+	gap: 33px 18px;
+}
+
+.item__price_value,
+.item__price_cost {
+	font-weight: 500;
+	line-height: 120%;
+	color: #4e5d7c;
+}
+
+.tariff__cards_item_try {
+	grid-area: button;
+	max-height: 48px;
+	border-radius: 47px;
+	padding: 12px 63px;
+	background-color: #357efe;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 800;
+	line-height: 140%;
+	color: #fff;
+}
+
+.difference {
+	border-radius: 8px;
+	padding: 8px 16px;
+	background-color: #ffc736;
+	font-weight: 700;
+	font-size: 17px;
+	color: #fff;
+	margin-left: -16px;
+}
+
+.no-benefit {
+	visibility: hidden;
+}
+
+.best-order {
+	background-color: #357efe;
+	color: #fff;
+}
+
+@media (max-width: 1435px) {
+	.tariff__cards {
+		display: grid;
+		gap: 24px;
+		grid-template-columns: repeat(2, minmax(328px, 369px));
+		grid-template-rows: repeat(2, 1fr);
+		justify-content: center;
+
+		margin-bottom: 40px;
+	}
+}
+
+@media (max-width: 1045px) {
+	.tariff__cards {
+		display: grid;
+		gap: 24px;
+		grid-template-columns: repeat(1, minmax(328px, 369px));
+		grid-template-rows: repeat(3, 1fr);
+		justify-content: center;
+
+		margin-bottom: 40px;
+	}
+}
+
+@media (max-width: 655px) {
+	.no-benefit {
+		display: none;
+	}
+
+	.tariff__body_subtitle,
+	.tariff__body_title {
+		text-align: start;
+	}
+
+	.tariff__cards_item {
+		padding: 48px 24px;
+		justify-content: flex-start;
+		gap: 0;
+
+		margin-bottom: 40px;
+	}
+
+	.tariff__cards_item_title {
+		font-size: 32px;
+	}
+
+	.tariff__cards_item_description {
+		line-height: 120%;
+	}
+
+	.item__price {
+		line-height: 120%;
+	}
+
+	.tariff__cards_item_description,
+	.item__price {
+		margin-bottom: 32px;
+	}
+}
