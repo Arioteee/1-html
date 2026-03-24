@@ -30,7 +30,7 @@ function Check(cryptoPassword, checkPassword) {
 	console.log(a)
 
 	if (a.join('') === checkPassword) {
-		console.log(true)
+		return true
 	}
 
 	return false
