@@ -19,7 +19,6 @@ function bubbleSort(arr) {
 	return sorted
 }
 
-// Пример использования
 const numbers = [1, 40, -5, 10, 0]
 const sortedNumbers = bubbleSort(numbers)
 
