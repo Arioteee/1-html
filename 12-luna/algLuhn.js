@@ -4,7 +4,7 @@ const cardNumberWOSymb = cardNumber.replace(/[^\p{L}\p{N}]/gu, '')
 
 // Проверка, что введены только цифры
 if (!isNaN(cardNumberWOSymb) && cardNumberWOSymb.length == 16) {
-	algLuhn(cardNumberWOSymb)
+	console.log(algLuhn(cardNumberWOSymb))
 } else {
 	console.log(false)
 }
@@ -13,7 +13,7 @@ function algLuhn(validNumber) {
 	const validNumberArray = validNumber.split('').map(Number)
 	let s
 
-	for (let i = 0; i < validNumberArray.length; i += 2) {
+	for (let i = validNumberArray.length - 2; i >= 0; i -= 2) {
 		if (validNumberArray[i] * 2 > 9) {
 			s = validNumberArray[i] * 2 - 9
 			validNumberArray[i] = s
@@ -27,11 +27,5 @@ function algLuhn(validNumber) {
 		return acc + el
 	}, 0)
 
-	return res
-}
-
-if (algLuhn(cardNumberWOSymb) % 10 === 0) {
-	console.log(true)
-} else {
-	console.log(false)
+	return res % 10 === 0 ? true : false
 }
