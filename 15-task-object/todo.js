@@ -1,4 +1,4 @@
-const ToDoList = {
+export const ToDoList = {
 	tasks: [
 		{
 			id: 1,
