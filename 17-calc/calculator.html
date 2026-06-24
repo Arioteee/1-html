@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Calc</title>
+
+		<script src="./calc.js"></script>
+	</head>
+	<body>
+		<input type="text" id="firstValue" placeholder="Введите значение" />
+		<input type="text" id="secondValue" placeholder="Введите значение" />
+		<button
+			type="submit"
+			id="addition"
+			onclick="
+				additionCalc(getValueFromInputs())
+				cleanInputs()
+			"
+		>
+			Сложить
+		</button>
+		<button
+			type="submit"
+			id="deduction"
+			onclick="
+				deductionCalc(getValueFromInputs())
+				cleanInputs()
+			"
+		>
+			Вычесть
+		</button>
+		<button
+			type="submit"
+			id="increase"
+			onclick="
+				increaseCalc(getValueFromInputs())
+				cleanInputs()
+			"
+		>
+			Умножить
+		</button>
+		<button
+			type="submit"
+			id="division"
+			onclick="
+				divisionCalc(getValueFromInputs())
+				cleanInputs()
+			"
+		>
+			Поделить
+		</button>
+		<p class="result"></p>
+	</body>
+</html>
