@@ -1,12 +1,8 @@
 'use strict'
 
-console.log('✅ Скрипт calc.js загружен')
-
 function getValueFromInputs() {
-	console.log('▶️ getValueFromInputs вызвана')
 	const firstRaw = document.querySelector('#firstValue').value.trim()
 	const secondRaw = document.querySelector('#secondValue').value.trim()
-	console.log('firstRaw:', firstRaw, 'secondRaw:', secondRaw)
 
 	function parseNumber(str) {
 		str = str.replace(',', '.')
@@ -18,7 +14,6 @@ function getValueFromInputs() {
 
 	const firstValue = parseNumber(firstRaw)
 	const secondValue = parseNumber(secondRaw)
-	console.log('firstValue:', firstValue, 'secondValue:', secondValue)
 
 	if (firstValue === null || secondValue === null) {
 		alert('Ошибка: введите корректные числа в оба поля!')
@@ -26,7 +21,6 @@ function getValueFromInputs() {
 	}
 
 	const result = { first: firstValue, second: secondValue }
-	console.log('✅ возвращаем объект:', result)
 	return result
 }
 
@@ -40,7 +34,6 @@ function innerText(value) {
 }
 
 function additionCalc(dataObj) {
-	console.log('additionCalc вызвана с:', dataObj)
 	if (!dataObj) {
 		alert('Ошибка: не удалось получить числа')
 		return
@@ -50,7 +43,6 @@ function additionCalc(dataObj) {
 }
 
 function deductionCalc(dataObj) {
-	console.log('deductionCalc вызвана с:', dataObj)
 	if (!dataObj) {
 		alert('Ошибка: не удалось получить числа')
 		return
@@ -60,7 +52,6 @@ function deductionCalc(dataObj) {
 }
 
 function increaseCalc(dataObj) {
-	console.log('increaseCalc вызвана с:', dataObj)
 	if (!dataObj) {
 		alert('Ошибка: не удалось получить числа')
 		return
@@ -70,7 +61,6 @@ function increaseCalc(dataObj) {
 }
 
 function divisionCalc(dataObj) {
-	console.log('divisionCalc вызвана с:', dataObj)
 	if (!dataObj) {
 		alert('Ошибка: не удалось получить числа')
 		return
